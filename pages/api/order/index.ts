@@ -48,7 +48,7 @@ async function postHandler(req:NextApiRequest,res:NextApiResponse, token){
             "unit_price": product.price
           }
         ],
-        notification_url: "http://notificationurl.com",
+        notification_url: "https://pagos-five.vercel.app/api/webhooks/mercadopago",
       }
     )
     res.send({url:pref.init_point})
